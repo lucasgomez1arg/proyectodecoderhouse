@@ -29,7 +29,7 @@ nav ul li{
     display: inline;
 }
 p{
-    color: black;
+    color: white;
     font-style: oblique;
     font-size: x-large;
     
@@ -45,7 +45,7 @@ h2{
 }
 
 body{
-    background-color: white;
+    background-color: black;
     max-width: 2000px;
     
    
