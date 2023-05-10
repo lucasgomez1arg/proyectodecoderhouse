@@ -1,63 +1,69 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
 
-h1{
-    color: darkred;
-    background-color: black;
-    font-style: oblique;
-    font-size: xx-large;
-    padding: 10px;
-}
-main{
-    margin: auto;
-    padding: 10px;
-}
-header nav ul li a{
-    background-color: darkred;
-    color: white;
-    text-decoration: none;
-    border: solid 3px red;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-    
-}
-nav ul li{
-    list-style: none;
-    display: inline;
-}
-p{
-    color: white;
-    font-style: oblique;
-    font-size: x-large;
-    
+h1 {
+  color: darkred;
+  background-color: black;
+  font-style: oblique;
+  font-size: xx-large;
+  padding: 10px;
+  display: inline-flex;
 }
 
-h2{
-    text-align: center;
-    color: darkred;
-    font-style: oblique;
-    font-size: xx-large;
-    padding: 10px;
-    text-decoration-line: underline;
+main {
+  margin: auto;
+  padding: 10px;
+}
+body {
+  background-color: black;
+  max-width: 2000px;
+
+
 }
 
-body{
-    background-color: black;
-    max-width: 2000px;
-    
-   
+
+header nav ul li a {
+  background-color: darkred;
+  color: white;
+  text-decoration: none;
+  border: solid 3px red;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 10px;
+
 }
 
-.botones{
-    display: flex;
-    justify-content: center;
-  
+nav ul li {
+  list-style: none;
+  display: inline;
 }
 
-.boton {
+p {
+  color: white;
+  font-style: oblique;
+  font-size: x-large;
+
+}
+
+h2 {
+  text-align: center;
+  color: darkred;
+  font-style: oblique;
+  font-size: xx-large;
+  padding: 10px;
+  text-decoration-line: underline;
+}
+
+
+.botones {
+  display: flex;
+  justify-content: center;
+
+}
+
+.botones-boton {
   background-color: darkred;
   color: white;
   text-decoration: none;
@@ -65,15 +71,18 @@ body{
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-  
+
 }
+
 .contenedor {
   display: flex;
   justify-content: right;
   margin-bottom: 20px;
-  
+
+
 }
-header nav img{
+
+header nav img {
   width: 100%;
   height: 100%;
 }
@@ -90,12 +99,12 @@ header nav img{
 
 }
 
-.images .orden img {
+.images .images-orden img {
   width: 98%;
   height: 98%;
 }
 
-.images .orden:nth-child(1){
+.images .images-orden:nth-child(1) {
   grid-row-start: span 2;
 }
 
@@ -106,16 +115,17 @@ header nav img{
   height: 0;
   overflow: hidden;
 }
+
 .centro iframe {
   position: absolute;
-  top:0;
+  top: 0;
   bottom: 10%;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-.alinear{
+.reparto-alinear {
   width: 200px;
   height: 300px;
   margin: 90px;
@@ -124,40 +134,43 @@ header nav img{
 }
 
 
-.reparto{
-width: 100%;
-height: 100%;
-margin: auto;
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+.reparto {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.produ{
+.produ {
   width: 100%;
   height: 100%;
 }
 
-.alipro{
+.alipro {
   width: 100%;
   height: 100%;
-  
+
 }
-.alinearprodu{
-  margin:auto;
+
+.alipro-1 {
+  margin: auto;
   padding: 10px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 
 }
-.alinearprodu img{
+
+.alipro-1 img {
   width: 600px;
   height: 500px;
-  
+
 }
-footer{
-  background-color:#3E3838;
+
+footer {
+  background-color: #3E3838;
   margin: 20px;
   padding: 20px;
   border: groove 5px black;
@@ -165,13 +178,15 @@ footer{
   margin: 10px;
   padding: 10px;
 }
-.pie{
+
+.pie {
   display: flex;
   justify-content: right;
   list-style: none;
-  
+
 }
-footer ul li{
+
+footer ul li {
   background-color: darkred;
   color: white;
   text-decoration: none;
@@ -183,7 +198,7 @@ footer ul li{
 }
 
 
-.pagreparto{
+.actores {
   width: 100%;
   height: 100%;
   margin: auto;
@@ -191,19 +206,19 @@ footer ul li{
   margin-bottom: 30px;
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
- 
+
 }
 
 @media (max-width: 600px) {
-    .pagreparto{
-        display: flex;
-        flex-wrap: wrap;
-    }
+  .actores {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
-.actores{
+.actores-rep {
   background-color: darkred;
   border: groove 5px black;
   border-radius: 10px;
@@ -211,12 +226,34 @@ footer ul li{
   padding: 10px;
 
 
-  
+
 }
-.parrafos{
+
+.parrafos {
   color: darkred;
   text-align: center;
   min-width: 250px;
 }
 
+.section-booststrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.form-bs{
+  background-color: darkred;
+  margin: 40px;
+  padding: 50px;
+  width: 40%;
+  height: 100%;
+}
 
+.input-group{
+  margin: 5px;
+  padding: 5px;
+
+}
+.form-select{
+  height: 40px;
+}
