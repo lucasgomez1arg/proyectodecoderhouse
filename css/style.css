@@ -10,6 +10,8 @@ h1 {
   font-size: xx-large;
   padding: 10px;
   display: inline-flex;
+  border-bottom-right-radius: 20px;
+
 }
 
 main {
@@ -216,6 +218,7 @@ footer ul li {
     display: flex;
     flex-wrap: wrap;
   }
+  
 }
 
 .actores-rep {
@@ -235,13 +238,13 @@ footer ul li {
   min-width: 250px;
 }
 
-.section-booststrap{
+.container-fluid{
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: black;
 }
-.form-bs{
+.row{
   background-color: darkred;
   margin: 40px;
   padding: 50px;
@@ -257,3 +260,4 @@ footer ul li {
 .form-select{
   height: 40px;
 }
+
