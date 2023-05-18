@@ -1,0 +1,185 @@
+@import "./base/vars";
+@import "./base/listas";
+@import "./base/maps";
+@import "./base/extend";
+
+@import "./componentes/header";
+@import "./componentes/footer";
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    margin: auto;
+    padding: 10px;
+}
+
+body {
+    background-color: $background-color_1;
+    max-width: 100%;
+}
+
+p {
+    color: $color_2;
+    font-style: oblique;
+    font-size: x-large;
+}
+
+h2 {
+    text-align: center;
+    color: $color_1;
+    font-style: oblique;
+    font-size: xx-large;
+    padding: 10px;
+    text-decoration-line: underline;
+}
+
+.botones {
+    @extend %dis-flex;
+}
+
+.botones-boton {
+    background-color: $background-color_2;
+    color: $color_2;
+    text-decoration: none;
+    border: solid 3px red;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.images {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50%);
+
+    .images-orden {
+        img {
+            width: 98%;
+            height: 98%;
+        }
+
+        &:nth-child(1) {
+            grid-row-start: span 2;
+        }
+    }
+}
+
+.centro {
+    position: relative;
+    padding-bottom: 40%;
+    margin: 30px;
+    height: 0;
+    overflow: hidden;
+
+    iframe {
+        position: absolute;
+        top: 0;
+        bottom: 10%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.reparto-alinear {
+    width: 200px;
+    height: 300px;
+    margin: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.reparto {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    @extend %dis-flex;
+    flex-wrap: wrap;
+   
+}
+
+.produ {
+    width: 100%;
+    height: 100%;
+}
+
+.alipro {
+    width: 100%;
+    height: 100%;
+}
+
+.alipro-1 {
+    margin: auto;
+    padding: 10px;
+    @extend %dis-flex;
+    flex-wrap: wrap;
+    
+
+    img {
+        width: 700px;
+        height: 600px;
+    }
+}
+
+.actores {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.actores-rep {
+    background-color: $background-color_2;
+    border: groove 5px black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.parrafos {
+    color: $color_1;
+    text-align: center;
+    min-width: 250px;
+}
+
+.contacto {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mb-1 {
+    width: 70%;
+    height: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: $color_1;
+
+    select {
+        width: 50%;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 600px) {
+    .actores {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

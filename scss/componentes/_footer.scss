@@ -1,0 +1,29 @@
+
+footer {
+    background-color: nth($colores ,5 );
+    margin: 20px;
+    padding: 20px;
+    border: groove 5px black;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+
+    ul {
+        li {
+            background-color: nth($colores, 4 );
+            color: $color_2;
+            text-decoration: none;
+            border: solid 3px red;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            margin-bottom: 0;
+        }
+    }
+}
+
+.pie {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+}

@@ -1,6 +1,6 @@
-* {
-  padding: 0;
-  margin: 0;
+.alipro-1, .reparto, .botones {
+  display: flex;
+  justify-content: center;
 }
 
 h1 {
@@ -11,44 +11,72 @@ h1 {
   padding: 10px;
   display: inline-flex;
   border-bottom-right-radius: 20px;
-
 }
 
-main {
-  margin: auto;
-  padding: 10px;
+header nav ul li {
+  list-style: none;
+  display: block;
+  margin-bottom: 20px;
 }
-body {
-  background-color: black;
-  max-width: 100%;
-
-
-}
-
-
 header nav ul li a {
-  background-color: darkred;
+  background-color: rgb(66, 0, 0);
   color: white;
   text-decoration: none;
   border: solid 3px red;
   padding: 5px;
   margin: 5px;
   border-radius: 10px;
-
+}
+header nav img {
+  width: 100%;
+  height: 100%;
 }
 
-nav ul li {
+footer {
+  background-color: #3E3838;
+  margin: 20px;
+  padding: 20px;
+  border: groove 5px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+}
+footer ul li {
+  background-color: rgb(66, 0, 0);
+  color: white;
+  text-decoration: none;
+  border: solid 3px red;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  margin-bottom: 0;
+}
+
+.pie {
+  display: flex;
+  justify-content: right;
   list-style: none;
-  display: block;
-  margin-bottom: 20px;
-  
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  margin: auto;
+  padding: 10px;
+}
+
+body {
+  background-color: black;
+  max-width: 100%;
 }
 
 p {
   color: white;
   font-style: oblique;
   font-size: x-large;
-
 }
 
 h2 {
@@ -60,28 +88,14 @@ h2 {
   text-decoration-line: underline;
 }
 
-
-.botones {
-  display: flex;
-  justify-content: center;
-
-}
-
 .botones-boton {
-  background-color: darkred;
+  background-color: rgb(66, 0, 0);
   color: white;
   text-decoration: none;
   border: solid 3px red;
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-
-}
-
-
-header nav img {
-  width: 100%;
-  height: 100%;
 }
 
 .images {
@@ -93,14 +107,11 @@ header nav img {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 50%);
-
 }
-
 .images .images-orden img {
   width: 98%;
   height: 98%;
 }
-
 .images .images-orden:nth-child(1) {
   grid-row-start: span 2;
 }
@@ -112,7 +123,6 @@ header nav img {
   height: 0;
   overflow: hidden;
 }
-
 .centro iframe {
   position: absolute;
   top: 0;
@@ -130,14 +140,11 @@ header nav img {
   margin-bottom: 20px;
 }
 
-
 .reparto {
   width: 100%;
   height: 100%;
   margin: auto;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .produ {
@@ -148,53 +155,17 @@ header nav img {
 .alipro {
   width: 100%;
   height: 100%;
-
 }
 
 .alipro-1 {
   margin: auto;
   padding: 10px;
-  display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-
 }
-
 .alipro-1 img {
   width: 700px;
   height: 600px;
-  
-
 }
-
-footer {
-  background-color: #3E3838;
-  margin: 20px;
-  padding: 20px;
-  border: groove 5px black;
-  border-radius: 10px;
-  margin: 10px;
-  padding: 10px;
-}
-
-.pie {
-  display: flex;
-  justify-content: right;
-  list-style: none;
-
-}
-
-footer ul li {
-  background-color: darkred;
-  color: white;
-  text-decoration: none;
-  border: solid 3px red;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 10px;
-  margin-bottom: 0;
-}
-
 
 .actores {
   width: 100%;
@@ -206,26 +177,14 @@ footer ul li {
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr);
-
-}
-
-@media (max-width: 600px) {
-  .actores {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
 }
 
 .actores-rep {
-  background-color: darkred;
+  background-color: rgb(66, 0, 0);
   border: groove 5px black;
   border-radius: 10px;
   margin: 10px;
   padding: 10px;
-
-
-
 }
 
 .parrafos {
@@ -235,7 +194,7 @@ footer ul li {
 }
 
 .contacto {
-  display:block;
+  display: block;
   width: 100%;
   height: 100%;
   margin: 20px;
@@ -250,8 +209,16 @@ footer ul li {
   padding: 10px;
   color: darkred;
 }
-
-.mb-1 select{
+.mb-1 select {
   width: 50%;
   padding: 5px;
 }
+
+@media (max-width: 600px) {
+  .actores {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
