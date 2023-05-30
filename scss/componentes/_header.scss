@@ -1,15 +1,9 @@
-
-h1 {
+h1{
     color: $color_1;
-    background-color: $background-color_1;
-    font-style: oblique;
-    font-size: xx-large;
-    padding: 10px;
-    display:inline;
-    border-radius: 10px;
-    
-    
+    text-decoration-line: overline;
 }
+
+
 header {
     nav {
         ul {
@@ -23,10 +17,9 @@ header {
                     background-color:map-get($deco , bg-c );
                     color: $color_2;
                     text-decoration: map-get($deco , t-d );
-                    border: map-get($deco , border );
                     padding: 5px;
                     margin: 5px;
-                    border-radius: 10px;
+                    
                 }
                 :hover{
                     transform: scale(1.2);
@@ -38,9 +31,17 @@ header {
         img {
             width: 100%;
             height: 100%;
+            
         }
     }
 }
+ 
+.container-fluid{
+    background-color: black;
+}
+.logo-inicio{
+    width: 100px;
+    height: 80px;
+    
+}
 
-
-  
