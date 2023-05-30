@@ -1,16 +1,20 @@
-
 footer {
-    background-color: nth($colores ,5 );
+    
     margin: 20px;
     padding: 20px;
     border: groove 5px black;
     border-radius: 10px;
     margin: 10px;
     padding: 10px;
+    background: rgb(0, 0, 0);
+    background: -moz-radial-gradient(circle, rgba(0, 0, 0, 1) 13%, rgba(127, 6, 6, 1) 17%, rgba(64, 3, 3, 1) 33%, rgba(203, 10, 10, 1) 78%);
+    background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 1) 13%, rgba(127, 6, 6, 1) 17%, rgba(64, 3, 3, 1) 33%, rgba(203, 10, 10, 1) 78%);
+    background: radial-gradient(circle, rgba(0, 0, 0, 1) 13%, rgba(127, 6, 6, 1) 17%, rgba(64, 3, 3, 1) 33%, rgba(203, 10, 10, 1) 78%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#cb0a0a", GradientType=1);
 
     ul {
         li {
-            background-color: nth($colores, 4 );
+            background-color: nth($colores, 4);
             color: $color_2;
             text-decoration: none;
             border: solid 3px red;
@@ -26,4 +30,14 @@ footer {
     display: flex;
     justify-content: right;
     list-style: none;
+    :hover{
+        transform: scale(0.8);
+        transition: all 2s;
+      }
+}
+
+.pie-favicon{
+    width: 20px;
+    height: 20px;
+  
 }

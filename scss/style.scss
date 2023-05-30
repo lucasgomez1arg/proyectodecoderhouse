@@ -5,6 +5,11 @@
 
 @import "./componentes/header";
 @import "./componentes/footer";
+@import "./componentes/contacto";
+@import "./componentes/produc";
+@import "./componentes/reparto";
+@import "./componentes/temporadas";
+
 
 * {
     padding: 0;
@@ -17,8 +22,12 @@ main {
 }
 
 body {
-    background-color: $background-color_1;
     max-width: 100%;
+    background: rgb(255, 20, 20);
+    background: -moz-linear-gradient(90deg, rgba(255, 20, 20, 1) 0%, rgba(23, 2, 2, 1) 0%, rgba(25, 7, 7, 1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255, 20, 20, 1) 0%, rgba(23, 2, 2, 1) 0%, rgba(25, 7, 7, 1) 100%);
+    background: linear-gradient(90deg, rgba(255, 20, 20, 1) 0%, rgba(23, 2, 2, 1) 0%, rgba(25, 7, 7, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ff1414", endColorstr="#190707", GradientType=1);
 }
 
 p {
@@ -38,6 +47,7 @@ h2 {
 
 .botones {
     @extend %dis-flex;
+    
 }
 
 .botones-boton {
@@ -48,7 +58,15 @@ h2 {
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+    
 }
+
+.botones:hover{
+    transform: scale(1.2);
+    transition: all 2s;
+}
+
+
 
 .images {
     width: 100%;
@@ -60,10 +78,18 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 50%);
 
+
     .images-orden {
         img {
             width: 98%;
             height: 98%;
+            border: groove 10px $background-color_2;
+            border-radius: 20px;
+
+        }
+        :hover{
+            transform: scale(1.02);
+            transition: all 2s;
         }
 
         &:nth-child(1) {
@@ -72,114 +98,9 @@ h2 {
     }
 }
 
-.centro {
-    position: relative;
-    padding-bottom: 40%;
-    margin: 30px;
-    height: 0;
-    overflow: hidden;
-
-    iframe {
-        position: absolute;
-        top: 0;
-        bottom: 10%;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-}
-
-.reparto-alinear {
-    width: 200px;
-    height: 300px;
-    margin: 90px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.reparto {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    @extend %dis-flex;
-    flex-wrap: wrap;
-   
-}
-
-.produ {
-    width: 100%;
-    height: 100%;
-}
-
-.alipro {
-    width: 100%;
-    height: 100%;
-}
-
-.alipro-1 {
-    margin: auto;
-    padding: 10px;
-    @extend %dis-flex;
-    flex-wrap: wrap;
-    
-
-    img {
-        width: 700px;
-        height: 600px;
-    }
-}
-
-.actores {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-}
-
-.actores-rep {
-    background-color: $background-color_2;
-    border: groove 5px black;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 10px;
-}
 
 .parrafos {
     color: $color_1;
     text-align: center;
     min-width: 250px;
-}
-
-.contacto {
-    display: block;
-    width: 100%;
-    height: 100%;
-    margin: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
-.mb-1 {
-    width: 70%;
-    height: 100%;
-    margin: 10px;
-    padding: 10px;
-    color: $color_1;
-
-    select {
-        width: 50%;
-        padding: 5px;
-    }
-}
-
-@media (max-width: 600px) {
-    .actores {
-        display: flex;
-        flex-wrap: wrap;
-    }
 }
