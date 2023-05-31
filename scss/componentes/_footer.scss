@@ -1,5 +1,5 @@
 footer {
-    
+
     margin: 20px;
     padding: 20px;
     border: groove 5px black;
@@ -11,7 +11,7 @@ footer {
     background: -webkit-radial-gradient(circle, rgba(0, 0, 0, 1) 13%, rgba(127, 6, 6, 1) 17%, rgba(64, 3, 3, 1) 33%, rgba(203, 10, 10, 1) 78%);
     background: radial-gradient(circle, rgba(0, 0, 0, 1) 13%, rgba(127, 6, 6, 1) 17%, rgba(64, 3, 3, 1) 33%, rgba(203, 10, 10, 1) 78%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#cb0a0a", GradientType=1);
-
+    
     ul {
         li {
             background-color: nth($colores, 4);
@@ -30,14 +30,15 @@ footer {
     display: flex;
     justify-content: right;
     list-style: none;
-    :hover{
+
+    :hover {
         transform: scale(0.8);
         transition: all 2s;
-      }
+    }
 }
 
-.pie-favicon{
+.pie-favicon {
     width: 20px;
     height: 20px;
-  
+
 }
